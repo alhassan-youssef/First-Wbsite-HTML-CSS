@@ -1,0 +1,990 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, #1B7B88, #166D79, #115E69);
+    overflow: auto;
+    z-index: 20;
+}
+.home-logo{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    background: linear-gradient(to bottom, #1B7B88, #166D79, #115E69);
+    width: 50px;
+    height: 50px;
+}
+.search-container{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    float: left;
+    margin: 17px auto;
+
+}
+.search-input{
+    width: 100%;
+    height: 100%px;
+    padding: 5px 30px;
+    border-radius: 25px;
+    border: 0;
+}
+.search-icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-100%)
+}
+.nav-list{
+    list-style: none;
+    padding-top: 20px;
+    margin-right: 10px;
+}
+.nav-list li{
+    display: inline-block;
+    float: right;
+    margin-left: 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.home-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../sitephotos/home-photo.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+}
+.H-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.home-content{
+    color: whitesmoke;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    text-align: center;
+
+}
+.home-title{
+    font-size: 60px;
+}
+.home-parag{
+    font-size: 25px;
+}
+.home-button {
+    margin: 10px 5px;
+    width: 120px;
+    height: 50px;
+    background: white;
+    color: #115E69;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.home-btn2{
+    background: linear-gradient(to bottom, #1B7B88, #166D79, #115E69);
+    color: white;
+}
+.home-button:hover{
+    opacity: 0.3;
+}
+/* page two in the website ---------------------------------- */
+
+.page2-container{
+    margin-top: 60px;
+}
+.page2-title{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #333;
+}
+.HFA{
+    font-size: 40px;
+}
+.page2-line{
+    width: 80px;
+    height: 2px;
+    background-color: #115E69;
+    margin: auto;
+    margin-top: 5px;
+}
+.page2-cards-container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 50px;
+}
+.page2-card{
+    background: #ffffff;
+    border-radius: 15px;
+    width: 30%;
+    height: 350px;
+    border: 1px solid #115E69;
+    float: left;
+    text-align: center;
+    padding: 30px 30px;
+    position: relative;
+}
+.page2-card2{
+    margin: 0 5%;
+}
+.page2-card-icon{
+    color: #115E69;
+    font-size: 50px;
+}
+.page2-card-title{
+    padding-top: 10px;
+    text-transform: capitalize;
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+.page2-card-p{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    color: #7f8c8d;
+    position: relative;
+    z-index: 2;
+}
+.page2-card-link{
+    display: inline-block;
+    color: #115E69;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    font-weight: bold;
+    z-index: 2;
+}
+.page2-card:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.page2-card:hover::after{
+    transition: 1s;
+    background-color: #115E69;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+/* page3 ------------------------ */
+.page3-title{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #333;
+}
+.page3-line{
+    width: 80px;
+    height: 2px;
+    background-color: #115d69;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.page3-container{
+    margin-top: 150px;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(219, 221, 221);
+
+}
+.page3-boss1-container, .page3-boss2-container{
+    margin: auto;
+    width: 70%;
+}
+.page3-boss2-container{
+    margin-top: 35px;
+}
+.page3-regions1-container, .page3-regions2-container{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.page3-region-Ain-Sokhna{
+    width: 30%;
+    height: 300px;
+    background-image: url(../page3photos/ainso5na..jpg);
+    background-size: cover;
+    float: left;
+}
+.page3-Aswan-region{
+    width: 30%;
+    height: 300px;
+    background-image: url(../page3photos/Aswan2.jpg);
+    float: left;
+}
+.Aswan-region{
+    margin: 0 5%;
+}
+.page3-Hurghada-region{
+    width: 30%;
+    height: 300px;
+    background-image: url(../page3photos/Hurghada..jpg);
+    float: left;
+}
+.page3-Ain-Sokhna-overlay, .page3-Aswan-overlay, .page3-Hurghada-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    visibility: hidden;
+    text-align: center;
+}
+.page3-Hurghada-region:hover .page3-Hurghada-overlay, .page3-region-Ain-Sokhna:hover .page3-Ain-Sokhna-overlay, .page3-Aswan-region:hover .page3-Aswan-overlay{
+    visibility: visible;
+}
+.page3-Marina-region{
+    width: 30%;
+    height: 300px;
+    background-image: url(../page3photos/marina.jpg);
+    float: left;
+}
+.page3-marsaallam-region{
+    width: 30%;
+    height: 300px;
+    background-image: url(../page3photos/marsaalm.jpg);
+    float: left;
+}
+.marsaallam-region{
+    margin: 0 5%;
+}
+.page3-sharmelsheikh-region{
+    width: 30%;
+    height: 300px;
+    background-image: url(../page3photos/sharmelsheikh.jpg);
+    float: left;
+}
+.page3-Marina-overlay, .page3-marsaallam-overlay, .page3-sharmelsheikh-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    visibility: hidden;
+    text-align: center;
+}
+.page3-Marina-region:hover .page3-Marina-overlay, .page3-marsaallam-region:hover .page3-marsaallam-overlay, .page3-sharmelsheikh-region:hover .page3-sharmelsheikh-overlay{
+    visibility: visible;
+}
+.page3-card-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.page3-start-price{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.page3-card-icon{
+    padding-top: 120px;
+}
+.page3-card-icon a i{
+    background-color: #ffffff;
+    font-size: 30px;
+    color: #7f8c8d;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* section4........................................................ */
+.section4-title{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    color: #333;
+}
+.section4-line{
+    width: 80px;
+    height: 2px;
+    background-color: #115d69;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.section4-cards-container{
+    width: 70%;
+    margin: auto;
+}
+.section4-first-3cards-container{
+    overflow: auto;
+}
+.section4-second-3cards-container{
+    overflow: auto;
+    margin-top: 30px;
+}
+.section4-card{
+    background: #ffffff;
+    border-radius: 15px;
+    width: 30%;
+    height: 200px;
+    border: 1px solid #115E69;
+    float: left;
+    overflow: auto;
+    position: relative;
+}
+.section4-thesecond-card{
+    margin: 0 5%;
+}
+.section4-card-title{
+    float: none;
+    font-size: 25px;
+    padding: 20px 10px;
+}
+.section4-card i{
+    float: left;
+    font-size: 25px; /* Size of the icon */
+    color: #115E69; /* Icon color */
+    padding: 20px 10px; /* Adds space between the icon and the heading */
+}
+.section4-card-parag{
+    padding-left: 45px;
+    padding-right: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+.section4-card::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.section4-card:hover::after{
+    transition: 1s;
+    background-color: #556061;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.section4-card:hover .section4-card-parag{
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+.section4-card:hover .section4-card-title{
+    color: #115E69;
+    position: relative;
+    z-index: 2;
+}
+.section4-card:hover i{
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+/* _____________________________________________________section5 ______________________________________________________________ */
+.section5{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.section5-container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.section5-content{
+    width: 40%;
+    float: left;
+}
+.section5-content-title{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #333;
+    padding: 5px;
+}
+.section5-content-parag{
+    padding-top: 5px;
+    letter-spacing: 1px;
+    color: #7f8c8d;
+}
+.section5-content-line{
+    width: 80px;
+    height: 3px;
+    background-color: #115d69;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+.section5-content-item i{
+    color: #115d69;
+    padding: 20px 5px;
+}
+.section5-content-item span{
+    font-weight: bold;
+    color: #556061;
+}
+.section5-image-container{
+    width: 50%;
+    margin-left: 10%;
+    float: left;
+}
+.sec5-pic{
+    width: 500px;
+    height: 500px;
+    background-image: url(../sitephotos/HFALL.png);
+    background-size: cover;
+    margin-left: auto;
+}
+.sec5-buttons{
+    width: 14%;
+    margin-left: 270px;
+    padding: 10px 0;
+}
+.sec5-buttons .sec5-button-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    color: none;
+    background-color: #a3dfe7;
+    margin-left: 7px;
+}
+.sec5-buttons .sec5-button-circle1{
+    background-color: #115E69;
+}
+.sec5-buttons .sec5-button-circle:hover{
+    background-color: #115E69;
+}
+/* _____________________________________________________section6 ______________________________________________________________ */
+.section6{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../sitephotos/ai-generated-house-design.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.section6-overlay{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+.section6-content-container{
+    width: 80%;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section6-sec-icon{
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    text-align: center;
+}
+.section6-sec-icon i{
+    font-size: 60px;
+    color:#1B7B88;
+    padding: 10px 0;
+}
+.section6-sec-icon h4{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.section6-sec-icon h5{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/* _____________________________________________________section7 ______________________________________________________________ */
+.section7{
+    margin-top: 80px;
+    font-family: Arial, sans-serif;
+}
+.section7-title{
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.section7-line{
+    width: 80px;
+    height: 2px;
+    background-color: #115d69;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.section7-cards-container{
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+}
+.sec7-card1, .sec7-card2, .sec7-card3{
+    width: 30%;
+    height: 400px;
+    border: 1.5px solid #115d69;
+    border-radius: 8px;
+    float: left;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+}
+.sec7-card-two{
+    margin: 0 5%;
+}
+.sec7-plan-name{
+    color: #2c3e50;
+    font-size: 23px;
+    position: relative;
+    z-index: 2;
+}
+.sec7-price-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #e6e6e6;
+    background-color: #f8f9fa;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec7-price-circle-content{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.sec7-price-circle .sec7-price-circle-content .sec7-price{
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+.sec7-price-circle .sec7-price-circle-content .sec7-price-period{
+    font-weight: bold;
+    color:  #333;
+    position: relative;
+    z-index: 2;
+}
+.sec7-features-container .feature{
+    margin: 18px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #7f8c8d;
+    position: relative;
+    z-index: 2;
+}
+.sec7-card-content .purchase-btn{
+    width: 170px;
+    height: 35px;
+    margin-top: 50px;
+    background-color: #115d69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.sec7-card1::after, .sec7-card2::after, .sec7-card3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.sec7-card1:hover::after, .sec7-card2:hover::after, .sec7-card3:hover::after{
+    background-color: #556061;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.sec7-card1:hover .sec7-price-circle, .sec7-card2:hover .sec7-price-circle, .sec7-card3:hover .sec7-price-circle{
+    border: 2px solid #333;
+}
+.sec7-card1:hover .sec7-plan-name, .sec7-card2:hover .sec7-plan-name, .sec7-card3:hover .sec7-plan-name{
+    color: #333;
+}
+/* _____________________________________________________section8 ______________________________________________________________ */
+.section8{
+    margin-top: 200px;
+    width: 100%;
+    height: 60vh;
+    background-image: url(../sitephotos/sec8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.section8-overlay{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+.section8-content-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+}
+.sec8-dives-container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section8-div1, .section8-div2{
+    width: 40%;
+    float: left;
+    margin: 0 5%;
+}
+.sec8-image-content{
+    overflow: auto;
+}
+.sec8-markrting-person-pic{
+    width: 80px;
+    height: 80px;
+    background-image: url(../sitephotos/markting.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+}
+.sec8-sales-person-pic{
+    width: 80px;
+    height: 80px;
+    background-image: url(../sitephotos/sales.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+}
+.sec8-name-job-content{
+    float: left;
+    padding-top: 14px;
+    padding-left: 10px;
+}
+.sec8-name{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.sec8-job{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #a3dfe7;
+}
+.sec8-description{
+    font-size: 15px;
+    font-weight: bold;
+    color: #556061;
+
+}
+/* <!-- _____________________________________________________section9 ______________________________________________________________ --> */
+.section9{
+    margin-top: 150px;
+    font-family: Arial, sans-serif;
+}
+.section9-title{
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.section9-line{
+    width: 80px;
+    height: 2px;
+    background-color: #115d69;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.sec9-team-dives-container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.sec9-div-member{
+    float: left;
+    width: 30%;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1.5px solid #115d69;
+    border-radius: 8px;
+    position: relative;
+}
+.sec9-div-member::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgb(117, 121, 121);
+    transition: 0.5s;
+}
+.sec9-div-member:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.sec9-div-member2{
+    margin: 0 5%;
+}
+.sec9-img-1{
+    background-image: url(../sitephotos/projectmanager.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.sec9-img-2{
+    background-image: url(../sitephotos/dataanalyst.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.sec9-img-3{
+    background-image: url(../sitephotos/customer.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.sec9-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    visibility: hidden;
+}
+.sec9-div-member:hover .sec9-overlay{
+    visibility: visible;
+}
+.sec9-member-img-overlay-icon{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: 250px;
+}
+.sec9-icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    visibility: hidden;
+}
+.sec9-div-member:hover .sec9-icons{
+    visibility: visible;
+}
+.sec9-icons a{
+    display: block;
+    color: #115d69;
+    font-size: 20px;
+    background-color: #556061;
+    color: #ffffff;
+    line-height: 35px;
+}
+.sec9-data{
+    margin: 20px 0;
+}
+.sec9-member-name{
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.sec9-member-job{
+    font-size: 20px;
+    font-weight: bold;
+    color: #556061;
+}
+.sec9-div-member:hover .sec9-member-name{
+    color: #333;
+}
+.sec9-div-member:hover .sec9-member-job{
+    color: #166D79;
+}
+/* <!-- _____________________________________________________section10 ______________________________________________________________ --> */
+.section10{
+    margin-top: 150px;
+    font-family: Arial, sans-serif;
+}
+.section10-title{
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.section10-line{
+    width: 80px;
+    height: 2px;
+    background-color: #115d69;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.section10-container{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+.sec10-dives{
+    width: 30%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    border: 1.5px solid #115d69;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: relative;
+}
+.sec10-dives::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background-color: rgb(117, 121, 121);
+}
+.sec10-dives:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.sec10-div-two{
+    margin: 0 5%;
+}
+.sec10-pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.sec10-realstate-name{
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.sec10-icons a i{
+    font-size: 15px;
+    text-decoration: none;
+    color: #115d69;
+}
+.sec10-icons a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #556061;
+    font-weight: bold;
+}
+.sec10-icon2{
+    padding: 0 10px;
+}
+.sec10-comment{
+    width: 95%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.sec10-readmore{
+    text-decoration: none;
+    color: #115d69;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sec10-dives:hover .sec10-readmore, .sec10-icons, .sec10-realstate-name, .sec10-comment, .sec10-pic img{
+    position: relative;
+    z-index: 2;
+}
+/* <!-- _____________________________________________________footer ______________________________________________________________ --> */
+
+.footer-container{
+    margin-top: 150px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, #1B7B88, #166D79, #115E69);
+    position: relative;
+}
+.footer-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.footer-content img{
+    width: 200px;
+    height: 150px;
+}
+.footer-contact{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.footer-icons a i{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(117, 121, 121);
+    opacity: 0.6;
+    color: #ffffff;
+}
+.footer-icons a i:hover{
+    opacity: 1;
+}
